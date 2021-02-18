@@ -1,0 +1,68 @@
+/* ESTILO.CSS */
+
+*{ margin: 0; padding: 0; }
+body{ font-family: helvetica, arial; font-size: 16px; color:#333; }
+header{ height: 100px; background-color:#e3e3e3; padding:0px;  }
+footer{ 
+	height: 50px; 
+	background-color: #e3e3e3; 
+	padding:10px 0; 
+	text-align: center; 
+	font-size:12px; 
+	color: #0a0a0a; 
+
+	position:absolute;
+    bottom:0;
+	width:100%;
+	
+	box-shadow: 1px 1px 1px #111 ;
+}
+
+/* class */
+.container{ margin: 0 auto; width: 960px; }
+
+
+
+/* id */
+#conteudo{ padding:50px 0; }
+#menu{ float:right; padding: 35px 0; }
+#menu a{ text-decoration: none; padding: 25px 15px; color: #0a0a0a; font-weight: 900; }
+#menu a:hover{ background-color: #52647d; height: 10px; border-radius: 5px; }
+
+
+
+.contato{
+	text-align: center;
+}
+
+#imagemTamanho{
+	width: 1140px !important;
+	height: 320px !important;
+}
+
+.textoJustificado{
+
+	text-align: justify-all;
+
+}
+
+.bkg{
+	background-image: url(img/Banerinicio.jpg);
+}
+
+
+footer{
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+
+}
+header{
+	display: block;
+	top: 0;
+	width: 100%;
+}
+.home{
+	position: relative !important;
+}
