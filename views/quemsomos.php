@@ -1,7 +1,10 @@
+<?php 
+session_start();
+?>
+
+<p class="novaSesssao"> Olá,  <?php echo $_SESSION['usuario'];?> </p>
+
 <div class="cabeçario">
-
-
-
 
 
 <div class="contato"> 

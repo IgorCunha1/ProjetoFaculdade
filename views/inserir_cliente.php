@@ -1,15 +1,21 @@
 <?php if(!isset($_GET['editar'])){ ?>
 
+</script>
+
 <h1>Inserir novo cliente</h1>
 <div class="form-group">
 <form method="post" action="processa_cliente.php">
 	<br>
 	<label>Nome cliente:</label><br>
-	<input type="text" name="nome_cliente" class="form-control" placeholder="Insira o nome do cliente">
+	<input type="text" name="nome_cliente" class="form-control" placeholder="Insira o nome do cliente" required>
 	<br><br>
-	<label>Inserir Cliente</label><br>
-	<input type="text" name="cnpj_cliente" class="form-control"  onkeypress="$(this).mask('00.000.000/0000-00')"><br><br>
-	
+	<label>CNPJ:</label><br>
+	<input type="text" name="cnpj_cliente" class="form-control"  required><br><br>
+	<br><br>
+	<label>Divida:</label><br>
+	<input type="number" name="divida_cliente" class="form-control dinheiro" id="dinheiro" step="0.01" required><br><br>
+
+
 	<input class="btn btn-success" type="submit" value="Inserir cliente">
 </form>
 </div>
@@ -29,7 +35,8 @@
 				<br><br>
 				<label>cnpj</label><br>
 				<input type="text" name="cnpj_cliente" placeholder="Insira o cnpj cliente"  value="<?php echo $linha['cnpj_cliente']; ?>"><br><br>
-				<input type="submit" value="Editar cliente">
+				
+				<input type="submit" value="Editar cliente" class="btn btn-primary">
 		
 			</form>
 		</div>

@@ -52,11 +52,11 @@ footer{
 
 
 footer{
-	position: relative;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-
+	
+ bottom: 0;
+ position: fixed;
+ width: 100%;
+ text-align: center;
 }
 header{
 	display: block;
@@ -65,4 +65,13 @@ header{
 }
 .home{
 	position: relative !important;
+}
+
+.novo{
+	image-resolution: 700px !important;
+}
+
+.novaSesssao{
+	text-align: right;
+	color: blue;
 }
