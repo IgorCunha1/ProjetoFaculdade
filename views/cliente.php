@@ -13,9 +13,38 @@
 		</tr>
 	</thead>
 	<?php 
+		
+
+		function formatar_cpf($doc){
+			$doc = preg_replace("/[^0-9]/", "",$doc);
+			$qtd = strlen($doc);
+
+
+			if($qtd <= 11){
+				if($qtd == 11){
+					$doc_formatado = 	substr($doc, 0, 3).".".
+										substr($doc, 3, 3).".".
+										substr($doc, 6, 3)."-".
+										substr($doc, 9, 2);
+				}else{
+					$doc_formatado =  	substr($doc, 0, 2).".".
+										substr($doc, 2, 3).".".
+										substr($doc, 5, 3)."/".
+										substr($doc, 8, 4);
+				}
+
+				return $doc_formatado;
+			}
+
+
+
+
+		}
+		
+
 		while($linha = mysqli_fetch_array($consulta_cliente)){
 			echo '<tr><td >'.$linha['nome_cliente'].'</td>';
-			echo '<td>'.$linha['cnpj_cliente'].'</td>';
+			echo '<td>'.formatar_cpf($linha['cnpj_cliente']).'</td>';
 			echo '<td> R$ '.$linha['divida_cliente'].'</td>';
 	?>
 	
