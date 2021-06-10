@@ -27,8 +27,11 @@ if($row == 1){
     exit();
 
 }else{
-    header('location: login.php');
-   
-    exit();
+
+    echo"<script language='javascript' type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='/ProjetoFaculdade/login.php';</script>";
+
+        
 }
- 
+header('location: ');
+    
+exit();

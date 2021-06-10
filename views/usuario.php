@@ -1,12 +1,11 @@
 <a href="?pagina=inserir_usuario" class="btn btn-success" role="button">Inserir novo Usuario</a>
 <br> <br>
-<table class="table" style="border:1px solid #ccc; width: 100%; text-align:center ">
+<table class="table" id="usuario" style="border:1px solid #ccc; width: 100%; text-align:center ">
 	
 	<thead class = "thead-dark">
 		<tr>
 			<th>ID Usuario</th>
 			<th>Nome Usuario</th>
-			
 			<th>Editar</th>
 			<th>Deletar</th>
 		</tr>

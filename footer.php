@@ -15,6 +15,8 @@
 	<script>
 			$(document).ready( function () {
     		$('#cliente').DataTable();
+			$('#usuario').DataTable();
+			$('#contratante').DataTable();
 		} );
 	</script>
 </body>

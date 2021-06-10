@@ -10,7 +10,7 @@
 	<input type="text" name="nome_cliente" class="form-control" placeholder="Insira o nome do cliente" required>
 	<br><br>
 	<label>CNPJ:</label><br>
-	<input type="text" name="cnpj_cliente" class="form-control"  required><br><br>
+	<input type="text" name="cnpj_cliente" class="form-control"  required>
 	<br><br>
 	<label>Divida:</label><br>
 	<input type="number" name="divida_cliente" class="form-control dinheiro" id="dinheiro" step="0.01" required><br><br>

@@ -5,9 +5,9 @@
 	<thead class = "thead-dark">
 		<tr>
 			<th>Nome cliente</th>
-			<th>Cnpj Cliente</th>
-			<th>Editar</th>
+			<th>CPF Cliente</th>
 			<th>Divida</th>
+			<th>Editar</th>			
 			<th>Deletar</th>
 			<th>Visualizar</th>
 		</tr>
